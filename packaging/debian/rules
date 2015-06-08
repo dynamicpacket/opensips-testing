@@ -37,7 +37,7 @@ ALL_MODPKG_LIST := \
 	MYSQL POSTGRES UNIXODBC JABBER CPL RADIUS \
 	PRESENCE XMLRPC PERL SNMPSTATS XMPP CROUTE BERKELEY LDAP \
 	GEOIP REGEX IDENTITY B2BUA DBHTTP DIALPLAN MEMCACHED JSON \
-	REDIS RABBITMQ LUA HTTP COMPRESSION EMERGENCY \
+	REDIS RABBITMQ HTTP COMPRESSION EMERGENCY \
 	PROTO_SCTP PROTO_TLS
 
 ifeq ($(BUILD_MODPKG_LIST),NONE)
@@ -193,7 +193,7 @@ configure-stamp:
 
 
 build: build-stamp
-build-stamp: patch-stamp configure-stamp 
+build-stamp: configure-stamp 
 	dh_testdir
 
 	# Add here commands to compile the package.
