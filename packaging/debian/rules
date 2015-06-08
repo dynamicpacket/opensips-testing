@@ -26,10 +26,6 @@ URL := http://opensips.org/pub/opensips/$(UPVERSION)/src/opensips-$(UPVERSION)-t
 # Uncomment this to turn on verbose mode.
 # export DH_VERBOSE=1
 
-# Include dpatch rules
-include /usr/share/dpatch/dpatch.make
-
-
 # Do we want the TLS version ?
 # Disabled by default due to license issues, set to non-void to enable
 TLS=
